@@ -5,5 +5,5 @@ might not be allowed, so this list serves as a way to mark which are allowed for
 
 | Network | Address |
 | ------- | ------- |
-| Mainnet | 0xc557c4c87f03a992 |
-| Testnet | 0x5c73e49df4082f51 |
+| Mainnet | 0x42a54b4f70e7dc81 |
+| Testnet | 0x6d9ae43184a7ad9f |

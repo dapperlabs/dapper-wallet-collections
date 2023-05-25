@@ -15,11 +15,12 @@ pub contract DapperWalletCollections {
             DapperWalletCollections.types.remove(key: t)
             emit TypeChanged(identifier: t.identifier, added: false)
         }
-    }
+    }    
 
     init () {
         self.types = {}
 
         self.StoragePath = /storage/dapperWalletCollections
+        self.account.save(<- create Admin(), to: self.StoragePath)
     }
 }

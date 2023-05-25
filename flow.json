@@ -11,7 +11,7 @@
 			"key": "7b560c9a75bc0bd9f2921145b6a7e6b341b2adfcafe9870bcd455f61c74d10d1"
 		},
 		"testnet": {
-			"address": "0x5c73e49df4082f51",
+			"address": "0x6d9ae43184a7ad9f",
 			"key": {
 				"type": "google-kms",
 				"index": 0,
@@ -21,7 +21,7 @@
 			}
 		},
 		"mainnet": {
-			"address": "0xc557c4c87f03a992",
+			"address": "0x42a54b4f70e7dc81",
 			"key": {
 				"type": "google-kms",
 				"index": 0,
