@@ -1,0 +1,54 @@
+{
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "0xf8d6e0586b0a20c7",
+			"key": "7b560c9a75bc0bd9f2921145b6a7e6b341b2adfcafe9870bcd455f61c74d10d1"
+		},
+		"testnet": {
+			"address": "0x5c73e49df4082f51",
+			"key": {
+				"type": "google-kms",
+				"index": 0,
+				"signatureAlgorithm": "ECDSA_P256",
+				"hashAlgorithm": "SHA2_256",
+				"resourceID": "projects/flowty-contracts/locations/global/keyRings/contracts/cryptoKeys/dapper-wallet-collections/cryptoKeyVersions/1"
+			}
+		},
+		"mainnet": {
+			"address": "0xc557c4c87f03a992",
+			"key": {
+				"type": "google-kms",
+				"index": 0,
+				"signatureAlgorithm": "ECDSA_P256",
+				"hashAlgorithm": "SHA2_256",
+				"resourceID": "projects/flowty-contracts/locations/global/keyRings/contracts/cryptoKeys/dapper-wallet-collections-mainnet/cryptoKeyVersions/1"
+			}
+		}
+	},
+	"contracts": {
+		"DapperWalletCollections": "./contracts/DapperWalletCollections.cdc"
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"DapperWalletCollections"
+			]
+		},
+		"testnet": {
+			"testnet": [
+				"DapperWalletCollections"
+			]
+		},
+		"mainnet": {
+			"mainnet": [
+				"DapperWalletCollections"
+			]
+		}
+	}
+}
