@@ -15,7 +15,11 @@ pub contract DapperWalletCollections {
             DapperWalletCollections.types.remove(key: t)
             emit TypeChanged(identifier: t.identifier, added: false)
         }
-    }    
+    }
+
+    pub fun containsType(_ t: Type): Bool {
+        return self.types.containsKey(t)
+    }
 
     init () {
         self.types = {}
