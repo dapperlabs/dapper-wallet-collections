@@ -21,6 +21,23 @@ pub contract DapperWalletCollections {
         return self.types.containsKey(t)
     }
 
+    pub fun getValidTypes(): [Type] {
+
+        let response: [Type] = []
+
+        for type in self.types {
+
+            if (!self.types[type]) {
+
+                continue
+            }
+
+            response.append(type)
+        }
+
+        return response
+    }
+
     init () {
         self.types = {}
 
