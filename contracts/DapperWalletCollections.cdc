@@ -22,7 +22,7 @@ pub contract DapperWalletCollections {
     }
 
     pub fun getTypes(): [Type] {
-        return self.types.keys!
+        return self.types.keys
     }
 
     init () {
