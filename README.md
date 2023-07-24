@@ -7,3 +7,5 @@ might not be allowed, so this list serves as a way to mark which are allowed for
 | ------- | ------- |
 | Mainnet | 0x42a54b4f70e7dc81 |
 | Testnet | 0x6d9ae43184a7ad9f |
+
+Initially Developed by [Flowty](https://github.com/Flowtyio)
